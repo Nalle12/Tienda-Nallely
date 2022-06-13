@@ -1,0 +1,36 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8">
+       
+    </head>
+    <body>
+        <h1>Un cliente</h1>
+        <p>Nombre:<span></span> th: text="${Cliente.nombre}"</span></p>
+        <p>Apellidos:<span></span> th: text="${Cliente.apellido}"</span></p>
+        <p>Correo:<span></span> th: text="${Cliente.correo}"</span></p>
+        <p>Telefono:<span></span> th: text="${Cliente.telefono}"</span></p>
+       <br>
+       <table border="0">
+           <thead>
+               <tr>
+                   <th>Nombre</th>
+                   <th>Apellidos</th>
+                   <th>Correo</th>
+                   <th>Telefono</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr th:each="item : ${clientes}">
+                   <td th:text="${item.nombre}"></td>
+                   <td th:text="${item.apellidos}"></td>
+                   <td th:text="${item.correp}"></td>
+                   <td th:text="${item.telefono}"></td>
+                  
+               </tr>
+           </tbody>
+       </table>
+
+    </body>
+</html>
