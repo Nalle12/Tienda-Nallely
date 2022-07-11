@@ -1,4 +1,6 @@
-package com.Tienda.Services;
+package com.Tienda.Service;
+
+/*package com.Tienda.Services;
 
 import com.Tienda.Models.Clientes;
 import com.Tienda.dao.ClienteDAO;
@@ -25,21 +27,22 @@ public class ClienteImpServices implements clienteServices {
     @Override
     @Transactional
     public Clientes save(Clientes cliente) {
-        return clienteDAO.save(cliente);
+       return clienteDAO.save(cliente);
     }
 
     @Override
     @Transactional
     public Clientes delete(Clientes cliente) {
-        clienteDAO.delete(cliente);
+       clienteDAO.delete(cliente);
         return cliente;
     }
 
     @Override
     @Transactional(readOnly = true)
     public Clientes find(Long id) {
-        return clienteDAO.findById(id).orElse(null);
+       return clienteDAO.findById(id).orElse(null);
     }
 
     
 }
+*/

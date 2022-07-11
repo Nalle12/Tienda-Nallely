@@ -1,11 +1,11 @@
-package com.Tienda.Services;
+package com.Tienda.Service;
 
 import com.Tienda.Models.Clientes;
 import java.util.List;
 
 
 
-public interface clienteServices {
+public interface clienteService {
     
     public List<Clientes> getAllClientes();
 
