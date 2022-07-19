@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+            <nav class="nav">
+                <a th:href="@{/}" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link">Clientes</a>
+                    </li> <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link">Clientes</a>
+                    <li class="nav-menu-item">
+                        <a th:href="@{/categoria/listado}" class="nav-menu-link nav-link">Categorías</a>
+                         <a th:href="@{/categoria/listado}" class="nav-menu-link nav-link">Categorias</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a th:href="@{/articulo/listado}" class="nav-menu-link nav-link">Articulos</a>
+                         <a th:href="@{/articulo/listado}" class="nav-menu-link nav-link">Articulos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <footer th:fragment="footer" class="footer">
+            <p>&COPY; [[#{plantilla.derechos}]]</p>
+            
+        </footer>
+    </body>
+</html>
