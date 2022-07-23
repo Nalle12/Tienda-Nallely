@@ -2,6 +2,7 @@
 package com.Tienda.controller;
 
 
+import com.Tienda.domain.Cliente;
 import com.Tienda_L.domain.Cliente;
 import com.Tienda_L.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;

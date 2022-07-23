@@ -25,8 +25,11 @@
             </nav>
         </header>
         <footer th:fragment="footer" class="footer">
-            <p>&COPY; [[#{plantilla.derechos}]]</p>
-            
+         <div>&COPY; [[#{plantilla.derechos}]]</div>
+              <a th:href="@{/(lang=es)}"ES</a>
+              <a th:href="@{/(lang=en)}"EN</a>  
+              <form method="POST"th:action"@"{/logout}" style="display:inline;">
+               <a th:href="#"onclick"this.parentNode.submit()    
         </footer>
     </body>
 </html>
